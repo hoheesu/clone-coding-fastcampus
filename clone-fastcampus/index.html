@@ -8,147 +8,162 @@
 
   <link rel="shortcut icon" href="./img/fast-favicon.ico"><!-- favicon -->
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.scss">
 
   <script src="./js/main.js"></script>
   <title>패스트캠퍼스-yjs</title>
 </head>
 
 <body>
+  <div class="modal">
+    
+  </div>
   <header>
     <div class="container">
-      <div class="hd_top">
-        <div class="hd_top_left">
-          <h1>fastcampus logo</h1>
-          <div class="search_box">
+      <div class="hd-top">
+        <div class="hd-top-left">
+          <h1><img src="./img/fastcampus_logo.png" alt=""></h1>
+          <div class="search-box">
             <form action=".">
-              <input class="search_txt" type="text" placeholder="찾고싶은 강의 주제를 알려주세요">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input class="search-txt" type="text" placeholder="찾고싶은 강의 주제를 알려주세요">
             </form>
-          </div><!-- /.search_box -->
-        </div><!-- /.hd_top_left -->
-        <div class="hd_top_right">
-          <div class="user_box">
-            <div><img src="" alt="user profile"></div>
-            <span>윤준수님</span>
-            <i class="fa-solid fa-caret-down"></i>
+          </div><!-- /.searchbox -->
+        </div><!-- /.hd-top-left -->
+        <div class="hd-top-right">
+          <div class="user-box">
+            <div class="user-icon">
+              <i class="fa-solid fa-user"></i>
+            </div><!-- /.user-icon -->
+            <span>윤준수님<i class="fa-solid fa-caret-down"></i></span>
             <ul class="user">
               <li><a href="#"></a></li>
               <li><a href="#"></a></li>
               <li><a href="#"></a></li>
               <li><a href="#"></a></li>
             </ul>
-          </div><!-- /.user_box -->
-          <a href="#">기업교육 (icon)/</a>
-        </div><!-- /.hd_top_right -->
-      </div><!-- /.hd_top -->
-      <div class="hd_bot">
+          </div><!-- /.user-box -->
+          <a href="https://b2b.fastcampus.co.kr/">기업교육 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div><!-- /.hd-top-right -->
+      </div><!-- /.hd-top -->
+      <div class="hd-bot">
         <nav>
           <ul class="depth1">
-           <li><p>카테고리</p>
-            <ul class="depth2">
-              <li>
-                <a href="">프로그래밍</a>
-                <ul class="depth3">
-                  <li><a href="#">프론트엔드 개발</a></li>
-                  <li><a href="#">백엔드 개발</a></li>
-                  <li><a href="#">DevOps</a></li>
-                  <li><a href="#">모바일앱</a></li>
-                  <li><a href="#">개발자 커리어</a></li>
-                  <li><a href="#">코딩 입문</a></li>
-                  <li><a href="#">게임</a></li>
-                  <li><a href="#">블록체인 개발</a></li>
-                </ul><!-- /.depth3 -->
-              </li>
-              <li>
-                <a href="">데이터사이언스</a>
-                <ul class="depth3">
-                  <li><a href="#">머신러닝</a></li>
-                  <li><a href="#">딥러닝/인공지능</a></li>
-                  <li><a href="#">데이터분석</a></li>
-                  <li><a href="#">데이터엔지니어링</a></li>
-                </ul><!-- /.depth3 -->
-              </li>
-              <li>
-                <a href="">디자인</a>
-                <ul class="depth3">
-                  <li><a href="#">네오아카데미</a></li>
-                  <li><a href="#">디자인툴</a></li>
-                  <li><a href="#">UX/UI</a></li>
-                  <li><a href="#">시각디자인</a></li>
-                  <li><a href="#">일러스트</a></li>
-                </ul><!-- /.depth3 -->
-              </li>
-              <li>
-                <a href="">영상/3D</a>
-                <ul class="depth3">
-                  <li><a href="#">영상 편집</a></li>
-                  <li><a href="#">모션그래픽</a></li>
-                  <li><a href="#">게임그래픽</a></li>
-                  <li><a href="#">VFX</a></li>
-                </ul><!-- /.depth3 -->
-              </li>
-              <li>
-                <a href="">부동산/금융</a>
-                <ul class="depth3">
-                  <li><a href="#">부동산 개발</a></li>
-                  <li><a href="#">회계/재무/세무</a></li>
-                  <li><a href="#">금융/투자 실무</a></li>
-                </ul><!-- /.depth3 -->
-              </li>
-              <li>
-                <a href="">마케팅/글쓰기</a>
-                <ul class="depth3">
-                  <li><a href="#">디지털마케팅</a></li>
-                  <li><a href="#">SNS마케팅</a></li>
-                  <li><a href="#">데이터마케팅</a></li>
-                  <li><a href="#">글쓰기/카피라이팅</a></li>
-                </ul><!-- /.depth3 -->
-              </li>
-              <li>
-                <a href="">업무 생산성</a>
-                <ul class="depth3">
-                  <li><a href="#">PPT/보고서</a></li>
-                  <li><a href="#">엑셀/VBA</a></li>
-                  <li><a href="#">커뮤니케이션</a></li>
-                  <li><a href="#">업무자동화</a></li>
-                  <li><a href="#">리더십</a></li>
-                </ul><!-- /.depth3 -->
-              </li>
-              <li>
-                <a href="">투자/재테크</a>
-                <ul class="depth3">
-                  <li><a href="#">주식 투자</a></li>
-                  <li><a href="#">부동산 투자</a></li>
-                </ul><!-- /.depth3 -->
-              </li>
-              <li>
-                <a href="">부업/창업</a>
-              </li>
-              <li>
-                <a href="">숏북</a>
-              </li>
-            </ul><!-- /.depth2 -->
-          </li>
-          <li><a href="#" class="main_list">9월 마지막 최저가</a></li>
-          <li><a href="#" class="main_list">신규강의 런칭특가</a></li>
-          <li><a href="#" class="main_list">학습가이드</a></li>
-          <li><a href="#" class="main_list">더 레드</a></li>
-          <li><a href="#" class="main_list">네오아카데미</a></li>
-          <li><a href="#" class="main_list">국비지원</a></li>
-          <li>l</li>
-          <li><a href="#" class="small_list">미디어</a></li>
-          <li><a href="#" class="small_list">이벤트</a></li>
+            <li>
+              <button>
+                <i class="fa-solid fa-bars"></i>
+                <span>카테고리</span>
+              </button>
+              <div class="hover-out">
+                마우스 호버 풀림 방지
+              </div><!-- /.hover-out -->
+              <ul class="depth2">
+                <li>
+                  <a href=""><img src="img/pro-ico.svg" alt="아이콘">프로그래밍<em>&gt;</em></a>
+                  <ul class="depth3">
+                    <li><a href="#">프론트엔드 개발</a></li>
+                    <li><a href="#">백엔드 개발</a></li>
+                    <li><a href="#">DevOps</a></li>
+                    <li><a href="#">모바일앱</a></li>
+                    <li><a href="#">개발자 커리어</a></li>
+                    <li><a href="#">코딩 입문</a></li>
+                    <li><a href="#">게임</a></li>
+                    <li><a href="#">블록체인 개발</a></li>
+                  </ul><!-- /.depth3 -->
+                </li>
+                <li>
+                  <a href=""><img src="./img/data-ico.svg" alt="">데이터사이언스<em>&gt;</em></a>
+                  <ul class="depth3">
+                    <li><a href="#">머신러닝</a></li>
+                    <li><a href="#">딥러닝/인공지능</a></li>
+                    <li><a href="#">데이터분석</a></li>
+                    <li><a href="#">데이터엔지니어링</a></li>
+                  </ul><!-- /.depth3 -->
+                </li>
+                <li>
+                  <a href=""><img src="./img/dgn-ico.svg" alt="아이콘">디자인<em>&gt;</em></a>
+                  <ul class="depth3">
+                    <li><a href="#">네오아카데미</a></li>
+                    <li><a href="#">디자인툴</a></li>
+                    <li><a href="#">UX/UI</a></li>
+                    <li><a href="#">시각디자인</a></li>
+                    <li><a href="#">일러스트</a></li>
+                  </ul><!-- /.depth3 -->
+                </li>
+                <li>
+                  <a href=""><img src="./img/vid-ico.svg" alt="아이콘">영상/3D<em>&gt;</em></a>
+                  <ul class="depth3">
+                    <li><a href="#">영상 편집</a></li>
+                    <li><a href="#">모션그래픽</a></li>
+                    <li><a href="#">게임그래픽</a></li>
+                    <li><a href="#">VFX</a></li>
+                  </ul><!-- /.depth3 -->
+                </li>
+                <li>
+                  <a href=""><img src="./img/fin-ico.svg" alt="아이콘">부동산/금융<em>&gt;</em></a>
+                  <ul class="depth3">
+                    <li><a href="#">부동산 개발</a></li>
+                    <li><a href="#">회계/재무/세무</a></li>
+                    <li><a href="#">금융/투자 실무</a></li>
+                  </ul><!-- /.depth3 -->
+                </li>
+                <li>
+                  <a href=""><img src="./img/mkt-ico.svg" alt="">마케팅/글쓰기<em>&gt;</em></a>
+                  <ul class="depth3">
+                    <li><a href="#">디지털마케팅</a></li>
+                    <li><a href="#">SNS마케팅</a></li>
+                    <li><a href="#">데이터마케팅</a></li>
+                    <li><a href="#">글쓰기/카피라이팅</a></li>
+                  </ul><!-- /.depth3 -->
+                </li>
+                <li>
+                  <a href=""><img src="./img/prod-ico.svg" alt="아이콘">업무 생산성<em>&gt;</em></a>
+                  <ul class="depth3">
+                    <li><a href="#">PPT/보고서</a></li>
+                    <li><a href="#">엑셀/VBA</a></li>
+                    <li><a href="#">커뮤니케이션</a></li>
+                    <li><a href="#">업무자동화</a></li>
+                    <li><a href="#">리더십</a></li>
+                  </ul><!-- /.depth3 -->
+                </li>
+                <li>
+                  <a href=""><img src="./img/tch-ico.svg" alt="아이콘">투자/재테크<em>&gt;</em></a>
+                  <ul class="depth3">
+                    <li><a href="#">주식 투자</a></li>
+                    <li><a href="#">부동산 투자</a></li>
+                  </ul><!-- /.depth3 -->
+                </li>
+                <li>
+                  <a href=""><img src="./img/biz-ico.svg" alt="아이콘">부업/창업</a>
+                </li>
+                <li>
+                  <a href=""><img src="./img/sho-ico.svg" alt="아이콘">숏북</a>
+                </li>
+              </ul><!-- /.depth2 -->
+            </li>
+            <li><a href="#" class="main-list"><img src="./img/gift.png" alt="gift icon"> 9주년 이벤트</a></li>
+            <li><a href="#" class="main-list">신규강의 런칭특가</a></li>
+            <li><a href="#" class="main-list">학습가이드</a></li>
+            <li><a href="#" class="main-list">더 레드</a></li>
+            <li><a href="#" class="main-list">네오아카데미</a></li>
+            <li><a href="#" class="main-list">국비지원</a></li>
+            <li>|</li>
+            <li><a href="#" class="small-list">미디어</a></li>
+            <li><a href="#" class="small-list">이벤트</a></li>
           </ul><!-- /.depth1 -->
         </nav>
-      </div><!-- /.hd_bot -->
+      </div><!-- /.hd-bot -->
 
     </div><!-- /.container -->
   </header>
 
-  <body>
+  <main>
 
-  </body>
+  </main>
   <footer>
 
   </footer>
