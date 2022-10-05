@@ -64,6 +64,7 @@ header {
   height: 117px;
   box-sizing: border-box;
   border-bottom: 1px solid #dcdcdc;
+  z-index: 100;
 
   .hd-top {
     display: flex;
@@ -176,6 +177,7 @@ header {
 
   ul.depth1 {
     display: flex;
+    // z-index: 100;
 
     &>li {
       line-height: 36px;
@@ -323,148 +325,152 @@ header {
   }
 }
 
-main {
-  background-color: #888;
-  position: relative;
-}
-
-.swiper {
-  width: 100%;
-  height: 450px;
+section.main-visual {
   position: relative;
 
-  ul.swiper-wrapper {
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      width: 100%;
-
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-
-      .wrap-box {
-        width: 1460px;
-        padding: 0 90px;
-        margin: 0 auto;
-        overflow: hidden;
-
-        // .text-box {}
-
-        img {
-          display: block;
-          width: 1280px;
-          height: 100%;
-          margin: 0 auto;
-          object-fit: cover;
-          animation: main-visual 5.1s infinite ease-in-out;
-        }
-
-        @keyframes main-visual {
-          0% {
-            width: 1280px;
-          }
-
-          50% {
-            width: 1344px;
-          }
-
-          100% {
-            width: 1280px;
-          }
-        }
-      }
-    }
-
-    &>li:nth-child(1) {
-      background-color: #000;
-    }
-
-    &>li:nth-child(2) {
-      background-color: #ed234b;
-    }
-
-    &>li:nth-child(3) {
-      background-color: #46c480;
-    }
-    &>li:nth-child(4) {
-      background-color: #e01839;
-    }
-    &>li:nth-child(5) {
-      background-color: #fff3c1;
-    }
-    &>li:nth-child(6) {
-      background-color: #e0f6f4;
-    }
-    &>li:nth-child(7) {
-      background-color: #000;
-    }
-  }
-
-  .btns-box {
-    width: 980px;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-    top: -50px;
-    margin: 0 auto;
+  .swiper {
+    width: 100%;
+    height: 450px;
     position: relative;
 
-    .btn-box {
-      position: inherit;
-      display: flex;
-      width: 130px;
-      padding: 0;
-      height: 40px;
-      border-radius: 5px;
-      justify-content: space-between;
-      overflow: hidden;
+    ul.swiper-wrapper {
 
-      &>div {
-        background-color: rgba(255, 255, 255, .9);
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        width: 100%;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+        .wrap-box {
+          width: 1460px;
+          padding: 0 90px;
+          margin: 0 auto;
+          overflow: hidden;
+
+          // .text-box {}
+
+          img {
+            display: block;
+            width: 1280px;
+            height: 100%;
+            margin: 0 auto;
+            object-fit: cover;
+            animation: main-visual 5.1s infinite ease-in-out;
+          }
+
+          @keyframes main-visual {
+            0% {
+              width: 1280px;
+            }
+
+            50% {
+              width: 1344px;
+            }
+
+            100% {
+              width: 1280px;
+            }
+          }
+        }
       }
 
-      .btn-pause {
-        display: flex;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        margin: 0 auto;
-        border-left: 1px solid #dcdcdc;
-        border-right: 1px solid #dcdcdc;
-        box-sizing: border-box;
-        // background-color: rgba(255, 255, 255, .9);
-        // border-left: 1px soild;
-        z-index: 1;
-        i {
-          font-size: 24px;
-          text-align: center;
-          line-height: 40px;
-          color: #dcdcdc;
-          z-index: 1;
-        }
+      &>li:nth-child(1) {
+        background-color: #000;
+      }
+
+      &>li:nth-child(2) {
+        background-color: #ed234b;
+      }
+
+      &>li:nth-child(3) {
+        background-color: #46c480;
+      }
+
+      &>li:nth-child(4) {
+        background-color: #e01839;
+      }
+
+      &>li:nth-child(5) {
+        background-color: #fff3c1;
+      }
+
+      &>li:nth-child(6) {
+        background-color: #e0f6f4;
+      }
+
+      &>li:nth-child(7) {
+        background-color: #000;
       }
     }
 
-    .pag-box {
-      width: 300px;
-      position: inherit;
+    .btns-box {
+      width: 980px;
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
+      top: -50px;
+      margin: 0 auto;
+      position: relative;
 
-      .swiper-pagination {
-        width: 100%;
-        position: absolute;
+      .btn-box {
+        position: inherit;
+        display: flex;
+        width: 130px;
+        padding: 0;
+        height: 40px;
+        border-radius: 5px;
+        justify-content: space-between;
+        overflow: hidden;
+
+        &>div {
+          background-color: rgba(255, 255, 255, .9);
+        }
+
+        .btn-pause {
+          display: flex;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          margin: 0 auto;
+          border-left: 1px solid #dcdcdc;
+          border-right: 1px solid #dcdcdc;
+          box-sizing: border-box;
+          // background-color: rgba(255, 255, 255, .9);
+          // border-left: 1px soild;
+          z-index: 1;
+
+          i {
+            font-size: 24px;
+            text-align: center;
+            line-height: 40px;
+            color: #dcdcdc;
+            z-index: 1;
+          }
+        }
+      }
+
+      .pag-box {
+        width: 300px;
+        position: inherit;
+
+        .swiper-pagination {
+          width: 100%;
+          position: absolute;
+        }
       }
     }
   }

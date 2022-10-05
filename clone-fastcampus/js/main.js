@@ -4,7 +4,7 @@ var swiper = new Swiper(".mySwiper", {
   loopAdditionalSlides: 1,
   autoplay: {
     delay: 5000,
-    disableOnInteraction: false
+    disableOnInteraction: trud
   },
   pagination: {
     el: ".swiper-pagination",
