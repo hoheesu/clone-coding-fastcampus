@@ -11,17 +11,24 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./css/swiper.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.scss">
 
-  <script src="./js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="./js/main.js"></script>
   <title>패스트캠퍼스-yjs</title>
 </head>
 
 <body>
-  <div class="modal">
-    
-  </div>
+  <aside class="modal">
+    <img src="./img/top-banner.png" alt="상단 광고 배너">
+    <button>
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </aside>
   <header>
     <div class="container">
       <div class="hd-top">
@@ -162,6 +169,95 @@
   </header>
 
   <main>
+    <div class="swiper mySwiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <div class="wrap-box">
+            <div class="text-box">
+              <h3></h3>
+              <p></p>
+            </div>
+            <img src="./img/mv1.png" alt="mainvisual img1">
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="wrap-box">
+            <div class="text-box">
+
+            </div>
+            <img src="./img/mv2.png" alt="">
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="wrap-box">
+            <div class="text-box">
+
+            </div>
+            <img src="./img/mv3.png" alt="">
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="wrap-box">
+            <div class="text-box">
+
+            </div>
+            <img src="./img/mv4.png" alt="">
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="wrap-box">
+            <div class="text-box">
+
+            </div>
+            <img src="./img/mv5.png" alt="">
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="wrap-box">
+            <div class="text-box">
+
+            </div>
+            <img src="./img/mv6.png" alt="">
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="wrap-box">
+            <div class="text-box">
+
+            </div>
+            <img src="./img/mv7.png" alt="">
+          </div>
+        </li>
+        <!-- <li class="swiper-slide">
+          <div class="wrap-box">
+            <div class="text-box">
+
+            </div>
+            <img src="./img/mv" alt="">
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="wrap-box">
+            <div class="text-box">
+
+            </div>
+            <img src="./img/mv" alt="">
+          </div>
+        </li> -->
+      </ul><!-- /.swiper-wrapper -->
+
+      <article class="btns-box">
+        <div class="pag-box">
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="btn-box">
+          <div class="swiper-button-next"></div>
+          <div class="btn-pause"><i class="fa-solid fa-pause"></i></div>
+          <div class="swiper-button-prev"></div>
+        </div><!-- /.btn-box -->
+
+      </article>
+    </div><!-- /.my-swiper swiper -->
 
   </main>
   <footer>
