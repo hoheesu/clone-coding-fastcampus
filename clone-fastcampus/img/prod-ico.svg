@@ -1,0 +1,16 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 26C8 17.1634 15.1634 10 24 10C32.8366 10 40 17.1634 40 26C40 34.8366 32.8366 42 24 42C22.2539 42 20.5731 41.7203 19 41.2032" stroke="#171717" stroke-linecap="round"/>
+<circle r="3" transform="matrix(1 0 0 -1 24 26)" stroke="#171717"/>
+<line x1="24" y1="13.5" x2="24" y2="15.5" stroke="#171717" stroke-linecap="round"/>
+<line x1="24" y1="6.5" x2="24" y2="9.5" stroke="#171717" stroke-linecap="round"/>
+<line x1="21.5" y1="6.5" x2="26.5" y2="6.5" stroke="#171717" stroke-linecap="round"/>
+<line x1="11.5" y1="26" x2="13.5" y2="26" stroke="#171717" stroke-linecap="round"/>
+<line x1="2.5" y1="32.5" x2="13.5" y2="32.5" stroke="#171717" stroke-linecap="round"/>
+<line x1="8.5" y1="35.5" x2="13.5" y2="35.5" stroke="#171717" stroke-linecap="round"/>
+<line x1="5.5" y1="38.5" x2="13.5" y2="38.5" stroke="#171717" stroke-linecap="round"/>
+<line x1="34.5" y1="26" x2="36.5" y2="26" stroke="#171717" stroke-linecap="round"/>
+<line x1="15.1622" y1="17.1602" x2="16.5764" y2="18.5744" stroke="#171717" stroke-linecap="round"/>
+<line x1="30.7002" y1="19.0772" x2="26.104" y2="23.6734" stroke="#171717" stroke-linecap="round"/>
+<line x1="31.4268" y1="33.4302" x2="32.841" y2="34.8444" stroke="#171717" stroke-linecap="round"/>
+<line x1="24" y1="36.5" x2="24" y2="38.5" stroke="#171717" stroke-linecap="round"/>
+</svg>
