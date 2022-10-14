@@ -8,14 +8,10 @@ closeButton.onclick = function(){
   modalBanner.style.display='none';
 }
 
+
 /* ==================== ( depth hover ) ==================== */
 const depth = document.querySelector('header .hd-bot ul.depth1>li:nth-child(1)');
 const bgOpa = document.querySelector('.category-hover-back');
-
-// depth.onMouseOver = function(){
-//   // bgOpa.style.opacity = 1;
-  
-// }
 
 depth.addEventListener("mouseover",()=>{
   bgOpa.style.display = 'block';
@@ -24,27 +20,7 @@ depth.addEventListener("mouseout",()=>{
   bgOpa.style.display = 'none';
 })
 
-/* ==================== ( mv-banner Swiper ) ==================== */
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  // loopAdditionalSlides: 1,
-  loop: true,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
-});
-
-/* ==================== ( mv-banner 버튼 클릭 EVENT ) ==================== */
+/* ==================== ( mv-banner pause/play 버튼 클릭 EVENT ) ==================== */
 var el = document.querySelector('.swiper .btn-box .swiper-pause');
 //.swiper-pause를 를 변수el에 선언
 var pauseClick = 0;
@@ -69,7 +45,53 @@ el.onclick = function () { // 버튼이 클릭되었을때 ,
 
 }
 
+/* ==================== ( header search-box click시 검색창 block ) ==================== */
+const searchBox = document.querySelector('header .hd-top-left .search-box input')
+const inputFocus = document.querySelector('header .hd-top-left .search-box .input-focus')
 
+searchBox.addEventListener("focus",()=>{
+  inputFocus.style.display = 'block';
+});
+searchBox.addEventListener("blur",()=>{
+  inputFocus.style.display = 'none';
+});
+
+/* ==================== ( search-box focus li hover ) ==================== */
+const historyHover = document.querySelectorAll('header .search-box .input-focus ul.history li a')
+const historyHoverBg = document.querySelectorAll('header .search-box .input-focus ul.history li')
+
+for(let i = 0; i < historyHover.length; i++){
+  historyHover[i].addEventListener("mouseover",()=>{
+    historyHoverBg[i].style.backgroundColor = '#';
+  });
+  historyHover[i].addEventListener("mouseout",()=>{
+    historyHoverBg[i].style.backgroundColor = '#fff';
+  });
+}
+// prod. 노준영 
+
+
+/* ==================== ( mv-banner Swiper ) ==================== */
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  // loopAdditionalSlides: 1,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  }
+});
+
+/* ==================== ( section.event ) ==================== */
 var swiper1 = new Swiper(".mySwiper1", {
   slidesPerView: 3,
   spaceBetween: 20,
@@ -82,5 +104,47 @@ var swiper1 = new Swiper(".mySwiper1", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-  },
+  }
+});
+
+
+/* ==================== ( section.cate1 ) ==================== */
+var swiper2 = new Swiper(".mySwiper2", {
+  slidesPerView: 4,
+  spaceBetween: 16,
+  slidesPerGroup: 4,
+
+  loopFillGroupWithBlank: true,
+
+  navigation: {
+    nextEl: ".swiper-button-next1",
+    prevEl: ".swiper-button-prev1"
+  }
+});
+
+/* ==================== ( section.cate2 ) ==================== */
+var swiper3 = new Swiper(".mySwiper3", {
+  slidesPerView: 4,
+  spaceBetween: 16,
+  slidesPerGroup: 4,
+
+  loopFillGroupWithBlank: true,
+
+  navigation: {
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2"
+  }
+});
+/* ==================== ( section.cate3 ) ==================== */
+var swiper4 = new Swiper(".mySwiper4", {
+  slidesPerView: 4,
+  spaceBetween: 16,
+  slidesPerGroup: 4,
+
+  loopFillGroupWithBlank: true,
+
+  navigation: {
+    nextEl: ".swiper-button-next3",
+    prevEl: ".swiper-button-prev3"
+  }
 });

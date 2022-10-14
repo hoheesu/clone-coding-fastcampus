@@ -129,37 +129,14 @@ closeButton.onclick = function () {
 
 
 var depth = document.querySelector('header .hd-bot ul.depth1>li:nth-child(1)');
-var bgOpa = document.querySelector('.category-hover-back'); // depth.onMouseOver = function(){
-//   // bgOpa.style.opacity = 1;
-// }
-
+var bgOpa = document.querySelector('.category-hover-back');
 depth.addEventListener("mouseover", function () {
   bgOpa.style.display = 'block';
 });
 depth.addEventListener("mouseout", function () {
   bgOpa.style.display = 'none';
 });
-/* ==================== ( mv-banner Swiper ) ==================== */
-
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  // loopAdditionalSlides: 1,
-  loop: true,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
-});
-/* ==================== ( mv-banner 버튼 클릭 EVENT ) ==================== */
+/* ==================== ( mv-banner pause/play 버튼 클릭 EVENT ) ==================== */
 
 var el = document.querySelector('.swiper .btn-box .swiper-pause'); //.swiper-pause를 를 변수el에 선언
 
@@ -189,6 +166,57 @@ el.onclick = function () {
     swiper.autoplay.start(); // swiper autoplay를 실행한다.
   }
 };
+/* ==================== ( header search-box click시 검색창 block ) ==================== */
+
+
+var searchBox = document.querySelector('header .hd-top-left .search-box input');
+var inputFocus = document.querySelector('header .hd-top-left .search-box .input-focus');
+searchBox.addEventListener("focus", function () {
+  inputFocus.style.display = 'block';
+});
+searchBox.addEventListener("blur", function () {
+  inputFocus.style.display = 'none';
+});
+/* ==================== ( search-box focus li hover ) ==================== */
+
+var historyHover = document.querySelectorAll('header .search-box .input-focus ul.history li a');
+var historyHoverBg = document.querySelectorAll('header .search-box .input-focus ul.history li');
+
+var _loop = function _loop(i) {
+  historyHover[i].addEventListener("mouseover", function () {
+    historyHoverBg[i].style.backgroundColor = '#';
+  });
+  historyHover[i].addEventListener("mouseout", function () {
+    historyHoverBg[i].style.backgroundColor = '#fff';
+  });
+};
+
+for (var i = 0; i < historyHover.length; i++) {
+  _loop(i);
+} // prod. 노준영 
+
+/* ==================== ( mv-banner Swiper ) ==================== */
+
+
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  // loopAdditionalSlides: 1,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  }
+});
+/* ==================== ( section.event ) ==================== */
 
 var swiper1 = new Swiper(".mySwiper1", {
   slidesPerView: 3,
@@ -202,6 +230,42 @@ var swiper1 = new Swiper(".mySwiper1", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
+  }
+});
+/* ==================== ( section.cate1 ) ==================== */
+
+var swiper2 = new Swiper(".mySwiper2", {
+  slidesPerView: 4,
+  spaceBetween: 16,
+  slidesPerGroup: 4,
+  loopFillGroupWithBlank: true,
+  navigation: {
+    nextEl: ".swiper-button-next1",
+    prevEl: ".swiper-button-prev1"
+  }
+});
+/* ==================== ( section.cate2 ) ==================== */
+
+var swiper3 = new Swiper(".mySwiper3", {
+  slidesPerView: 4,
+  spaceBetween: 16,
+  slidesPerGroup: 4,
+  loopFillGroupWithBlank: true,
+  navigation: {
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2"
+  }
+});
+/* ==================== ( section.cate3 ) ==================== */
+
+var swiper4 = new Swiper(".mySwiper4", {
+  slidesPerView: 4,
+  spaceBetween: 16,
+  slidesPerGroup: 4,
+  loopFillGroupWithBlank: true,
+  navigation: {
+    nextEl: ".swiper-button-next3",
+    prevEl: ".swiper-button-prev3"
   }
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -232,7 +296,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53034" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63651" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
