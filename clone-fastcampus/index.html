@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <link rel="stylesheet" href="./css/swiper.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="./css/swiper.css"> -->
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.scss">
 
@@ -40,6 +40,58 @@
             <form action=".">
               <i class="fa-solid fa-magnifying-glass"></i>
               <input class="search-txt" type="text" placeholder="찾고싶은 강의 주제를 알려주세요">
+              <div class="input-focus">
+                <div class="search-recent">
+                  <div class="recent-del">
+                    <p>최근검색어</p>
+                    <button>전체삭제</button>
+                  </div>
+                  <ul class="history">
+                    <li>
+                      <a href="#">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>메가바이트스쿨</p>
+                      </a> 
+                      <span>x</span>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>프론트엔드</p>
+                      </a>
+                      <span>x</span>
+                    </li>
+                    <li>
+                      <a href="#">
+                          <i class="fa-regular fa-clock"></i>
+                          <p>초격차</p>
+                        </a>
+                      <span>x</span>
+                    </li>
+                  </ul>
+                </div><!-- /.search-recent -->
+                <div class="rec-search">
+                  <p>추천검색어</p>
+                  <ul>
+                    <li><a href="#">내일배움카드</a></li>
+                    <li><a href="#">프론트엔드</a></li>
+                    <li><a href="#">백엔드</a></li>
+                    <li><a href="#">풀스택</a></li>
+                    <li><a href="#">초격차</a></li>
+                    <li><a href="#">더레드</a></li>
+                    <li><a href="#">javascript</a></li>
+                    <li><a href="#">퍼블리싱</a></li>
+                    <li><a href="#">데이터</a></li>
+                    <li><a href="#">디자인</a></li>
+                    <li><a href="#">SQL</a></li>
+                    <li><a href="#">자바</a></li>
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">엑셀</a></li>
+                    <li><a href="#">영어</a></li>
+                    <li><a href="#">인공지능</a></li>
+                  </ul>
+                </div><!-- /.rec-search -->
+              </div>
             </form>
           </div><!-- /.searchbox -->
         </div><!-- /.hd-top-left -->
@@ -49,11 +101,12 @@
               <i class="fa-solid fa-user"></i>
             </div><!-- /.user-icon -->
             <span>윤준수님<i class="fa-solid fa-caret-down"></i></span>
-            <ul class="user">
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
+            <ul class="user-site">
+              <li><a href="javascript:void(0)">내 강의 보기</a></li>
+              <li><a href="javascript:void(0)">수강신청 내역</a></li>
+              <li><a href="javascript:void(0)">거래 내역</a></li>
+              <li><p></p></li>
+              <li><a href="javascript:void(0)">로그아웃</a></li>
             </ul>
           </div><!-- /.user-box -->
           <a href="https://b2b.fastcampus.co.kr/">기업교육 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -74,76 +127,76 @@
                 <li>
                   <a href=""><img src="img/pro-ico.svg" alt="아이콘">프로그래밍<em>&gt;</em></a>
                   <ul class="depth3">
-                    <li><a href="#">프론트엔드 개발</a></li>
-                    <li><a href="#">백엔드 개발</a></li>
-                    <li><a href="#">DevOps</a></li>
-                    <li><a href="#">모바일앱</a></li>
-                    <li><a href="#">개발자 커리어</a></li>
-                    <li><a href="#">코딩 입문</a></li>
-                    <li><a href="#">게임</a></li>
-                    <li><a href="#">블록체인 개발</a></li>
+                    <li><a href="javascript:void(0)">프론트엔드 개발</a></li>
+                    <li><a href="javascript:void(0)">백엔드 개발</a></li>
+                    <li><a href="javascript:void(0)">DevOps</a></li>
+                    <li><a href="javascript:void(0)">모바일앱</a></li>
+                    <li><a href="javascript:void(0)">개발자 커리어</a></li>
+                    <li><a href="javascript:void(0)">코딩 입문</a></li>
+                    <li><a href="javascript:void(0)">게임</a></li>
+                    <li><a href="javascript:void(0)">블록체인 개발</a></li>
                   </ul><!-- /.depth3 -->
                 </li>
                 <li>
                   <a href=""><img src="./img/data-ico.svg" alt="">데이터사이언스<em>&gt;</em></a>
                   <ul class="depth3">
-                    <li><a href="#">머신러닝</a></li>
-                    <li><a href="#">딥러닝/인공지능</a></li>
-                    <li><a href="#">데이터분석</a></li>
-                    <li><a href="#">데이터엔지니어링</a></li>
+                    <li><a href="javascript:void(0)">머신러닝</a></li>
+                    <li><a href="javascript:void(0)">딥러닝/인공지능</a></li>
+                    <li><a href="javascript:void(0)">데이터분석</a></li>
+                    <li><a href="javascript:void(0)">데이터엔지니어링</a></li>
                   </ul><!-- /.depth3 -->
                 </li>
                 <li>
                   <a href=""><img src="./img/dgn-ico.svg" alt="아이콘">디자인<em>&gt;</em></a>
                   <ul class="depth3">
-                    <li><a href="#">네오아카데미</a></li>
-                    <li><a href="#">디자인툴</a></li>
-                    <li><a href="#">UX/UI</a></li>
-                    <li><a href="#">시각디자인</a></li>
-                    <li><a href="#">일러스트</a></li>
+                    <li><a href="javascript:void(0)">네오아카데미</a></li>
+                    <li><a href="javascript:void(0)">디자인툴</a></li>
+                    <li><a href="javascript:void(0)">UX/UI</a></li>
+                    <li><a href="javascript:void(0)">시각디자인</a></li>
+                    <li><a href="javascript:void(0)">일러스트</a></li>
                   </ul><!-- /.depth3 -->
                 </li>
                 <li>
                   <a href=""><img src="./img/vid-ico.svg" alt="아이콘">영상/3D<em>&gt;</em></a>
                   <ul class="depth3">
-                    <li><a href="#">영상 편집</a></li>
-                    <li><a href="#">모션그래픽</a></li>
-                    <li><a href="#">게임그래픽</a></li>
-                    <li><a href="#">VFX</a></li>
+                    <li><a href="javascript:void(0)">영상 편집</a></li>
+                    <li><a href="javascript:void(0)">모션그래픽</a></li>
+                    <li><a href="javascript:void(0)">게임그래픽</a></li>
+                    <li><a href="javascript:void(0)">VFX</a></li>
                   </ul><!-- /.depth3 -->
                 </li>
                 <li>
                   <a href=""><img src="./img/fin-ico.svg" alt="아이콘">부동산/금융<em>&gt;</em></a>
                   <ul class="depth3">
-                    <li><a href="#">부동산 개발</a></li>
-                    <li><a href="#">회계/재무/세무</a></li>
-                    <li><a href="#">금융/투자 실무</a></li>
+                    <li><a href="javascript:void(0)">부동산 개발</a></li>
+                    <li><a href="javascript:void(0)">회계/재무/세무</a></li>
+                    <li><a href="javascript:void(0)">금융/투자 실무</a></li>
                   </ul><!-- /.depth3 -->
                 </li>
                 <li>
                   <a href=""><img src="./img/mkt-ico.svg" alt="">마케팅/글쓰기<em>&gt;</em></a>
                   <ul class="depth3">
-                    <li><a href="#">디지털마케팅</a></li>
-                    <li><a href="#">SNS마케팅</a></li>
-                    <li><a href="#">데이터마케팅</a></li>
-                    <li><a href="#">글쓰기/카피라이팅</a></li>
+                    <li><a href="javascript:void(0)">디지털마케팅</a></li>
+                    <li><a href="javascript:void(0)">SNS마케팅</a></li>
+                    <li><a href="javascript:void(0)">데이터마케팅</a></li>
+                    <li><a href="javascript:void(0)">글쓰기/카피라이팅</a></li>
                   </ul><!-- /.depth3 -->
                 </li>
                 <li>
                   <a href=""><img src="./img/prod-ico.svg" alt="아이콘">업무 생산성<em>&gt;</em></a>
                   <ul class="depth3">
-                    <li><a href="#">PPT/보고서</a></li>
-                    <li><a href="#">엑셀/VBA</a></li>
-                    <li><a href="#">커뮤니케이션</a></li>
-                    <li><a href="#">업무자동화</a></li>
-                    <li><a href="#">리더십</a></li>
+                    <li><a href="javascript:void(0)">PPT/보고서</a></li>
+                    <li><a href="javascript:void(0)">엑셀/VBA</a></li>
+                    <li><a href="javascript:void(0)">커뮤니케이션</a></li>
+                    <li><a href="javascript:void(0)">업무자동화</a></li>
+                    <li><a href="javascript:void(0)">리더십</a></li>
                   </ul><!-- /.depth3 -->
                 </li>
                 <li>
                   <a href=""><img src="./img/tch-ico.svg" alt="아이콘">투자/재테크<em>&gt;</em></a>
                   <ul class="depth3">
-                    <li><a href="#">주식 투자</a></li>
-                    <li><a href="#">부동산 투자</a></li>
+                    <li><a href="javascript:void(0)">주식 투자</a></li>
+                    <li><a href="javascript:void(0)">부동산 투자</a></li>
                   </ul><!-- /.depth3 -->
                 </li>
                 <li>
@@ -160,22 +213,54 @@
                 </li>
               </ul><!-- /.depth2 -->
             </li>
-            <li><a href="#" class="main-list"><img src="./img/gift.png" alt="gift icon"> 9주년 이벤트</a></li>
-            <li><a href="#" class="main-list">신규강의 런칭특가</a></li>
-            <li><a href="#" class="main-list">학습가이드</a></li>
-            <li><a href="#" class="main-list">더 레드</a></li>
-            <li><a href="#" class="main-list">네오아카데미</a></li>
-            <li><a href="#" class="main-list">국비지원</a></li>
+            <li><a href="javascript:void(0)" class="main-list"><img src="./img/gift.png" alt="gift icon"> 9주년 이벤트</a></li>
+            <li><a href="javascript:void(0)" class="main-list">신규강의 런칭특가</a></li>
+            <li><a href="javascript:void(0)" class="main-list">학습가이드</a></li>
+            <li><a href="javascript:void(0)" class="main-list">더 레드</a></li>
+            <li><a href="javascript:void(0)" class="main-list">네오아카데미</a></li>
+            <li><a href="javascript:void(0)" class="main-list">국비지원</a></li>
             <li>|</li>
-            <li><a href="#" class="small-list">미디어</a></li>
-            <li><a href="#" class="small-list">이벤트</a></li>
+            <li><a href="javascript:void(0)" class="small-list">미디어</a></li>
+            <li><a href="javascript:void(0)" class="small-list">이벤트</a></li>
           </ul><!-- /.depth1 -->
         </nav>
       </div><!-- /.hd-bot -->
 
     </div><!-- /.container -->
   </header>
+  <article class="chat-bot">
+    <button>
+      <img src="./img/chat-bot.svg" alt="챗봇">
+      <i class="fa-solid fa-angle-down"></i>
+    </button>
+    <div class="chat-box">
+      <div class="chat-top">
+        <p>챗봇과 대화하기<br><small><i class="fa-solid fa-message"></i>챗봇을 통해 문의를 해결해보세요!</small></p>
+      </div><!-- /.chat-top -->
+      <div class="chat-content">
+        <div class="flex-box">
+          <img src="./img/robot.png" alt="">
+          <div class="message">
+            안녕하세요. 패스트캠퍼스입니다. <br>
+            문의유형을 선택해주세요! <br>
+            <br><br>
+            >고객센터에서 더 많은 FAQ 보기 :  https://bit.ly/3SIfqI6
+          </div><!-- /.message -->
+        </div><!-- /.flex-box -->
+        <ul class="qna-list">
+          <li><button>강의 수강</button></li>
+          <li><button>이벤트/쿠폰</button></li>
+          <li><button>결제/증빙서류</button></li>
+          <li><button>수료증</button></li>
+          <li><button>취소/환불</button></li>
+          <li><button>국비지원/기업교육</button></li>
+        </ul>
+      </div><!-- /.chat-content -->
+      <div class="chat-bottom">
 
+      </div><!-- /.chat-bottom -->
+    </div><!-- chat-box -->
+  </article>
   <main>
     <section class="mv-banner">
       <div class="swiper mySwiper">
@@ -246,18 +331,14 @@
 
           </li> -->
         </ul><!-- /.swiper-wrapper -->
-
-        <article class="btns-box">
-          <div class="pag-box">
-            <div class="swiper-pagination"></div>
-          </div>
+        <div class="btns-box">
+          <div class="swiper-pagination"></div>
           <div class="btn-box">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-pause"><i class="fa-solid fa-pause"></i></div>
             <div class="swiper-button-prev"></div>
+            <div class="swiper-pause"><i class="fa-solid fa-pause"></i></div>
+            <div class="swiper-button-next"></div>
           </div><!-- /.btn-box -->
-
-        </article>
+        </div><!-- /.btns-box -->
       </div><!-- /.my-swiper swiper -->
     </section>
     <section class="low-pr">
@@ -266,10 +347,10 @@
           <h2>신규강의</h2>
           <p>최저가 사전예약 기회!</p>
           <em>런칭하자마자 뜨거운 반응인 강의만 모았습니다.</em>
-          <div class="more-box"><a href="#">모든 신규 강의 보러가기 &gt;</a></div>
-        </div>
+          <div class="more-box"><a href="javascript:void(0)">모든 신규 강의 보러가기 &gt;</a></div>
+        </div><!-- /.title-box -->
         <ul class="main-content">
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-1.png" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -283,7 +364,7 @@
                 <li>코딩테스트</li>
               </ul><!-- /.label-box -->
             </a></li>
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-2.jpg" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -298,7 +379,7 @@
                 <li>stack</li>
               </ul><!-- /.label-box -->
             </a></li>
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-3.png" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -315,7 +396,7 @@
                 <!-- <li>stack</li> -->
               </ul><!-- /.label-box -->
             </a></li>
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-4.jpg" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -330,7 +411,7 @@
                 <li>웹3.0</li>
               </ul><!-- /.label-box -->
             </a></li>
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-5.png" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -345,7 +426,7 @@
                 <!-- <li>stack</li> -->
               </ul><!-- /.label-box -->
             </a></li>
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-6.webp" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -361,7 +442,7 @@
                 <li>데이터분석</li>
               </ul><!-- /.label-box -->
             </a></li>
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-7.png" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -376,7 +457,7 @@
                 <li>김희재작가</li>
               </ul><!-- /.label-box -->
             </a></li>
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-8.png" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -394,7 +475,7 @@
                 <li>The Red</li>
               </ul><!-- /.label-box -->
             </a></li>
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-9.webp" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -408,7 +489,7 @@
                 <li>Kubernetes</li>
               </ul><!-- /.label-box -->
             </a></li>
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-10.png" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -434,18 +515,18 @@
             강의를 확인하세요!</p>
           <em>강의 판매수와 수강생의 만족도가 입증하는 대표 강의를 추천합니다.</em>
           <ul class="main-content">
-            <li><a href="#"><img src="./img/best-line1.png" alt="스테디셀러강의사진"></a></li>
-            <li><a href="#"><img src="./img/best-line2.png" alt="스테디셀러강의사진"></a></li>
-            <li><a href="#"><img src="./img/best-line3.png" alt="스테디셀러강의사진"></a></li>
-            <li><a href="#"><img src="./img/best-line4.png" alt="스테디셀러강의사진"></a></li>
-            <li><a href="#"><img src="./img/best-line5.png" alt="스테디셀러강의사진"></a></li>
-            <li><a href="#"><img src="./img/best-line6.png" alt="스테디셀러강의사진"></a></li>
-            <li><a href="#"><img src="./img/best-line7.png" alt="스테디셀러강의사진"></a></li>
-            <li><a href="#"><img src="./img/best-line8.png" alt="스테디셀러강의사진"></a></li>
-            <li><a href="#"><img src="./img/best-line9.png" alt="스테디셀러강의사진"></a></li>
-            <li><a href="#"><img src="./img/best-line10.png" alt="스테디셀러강의사진"></a></li>
-            <li><a href="#"><img src="./img/best-line11.png" alt="스테디셀러강의사진"></a></li>
-            <li><a href="#"><img src="./img/best-line12.png" alt="스테디셀러강의사진"></a></li>
+            <li><a href="javascript:void(0)"><img src="./img/best-line1.png" alt="스테디셀러강의사진"></a></li>
+            <li><a href="javascript:void(0)"><img src="./img/best-line2.png" alt="스테디셀러강의사진"></a></li>
+            <li><a href="javascript:void(0)"><img src="./img/best-line3.png" alt="스테디셀러강의사진"></a></li>
+            <li><a href="javascript:void(0)"><img src="./img/best-line4.png" alt="스테디셀러강의사진"></a></li>
+            <li><a href="javascript:void(0)"><img src="./img/best-line5.png" alt="스테디셀러강의사진"></a></li>
+            <li><a href="javascript:void(0)"><img src="./img/best-line6.png" alt="스테디셀러강의사진"></a></li>
+            <li><a href="javascript:void(0)"><img src="./img/best-line7.png" alt="스테디셀러강의사진"></a></li>
+            <li><a href="javascript:void(0)"><img src="./img/best-line8.png" alt="스테디셀러강의사진"></a></li>
+            <li><a href="javascript:void(0)"><img src="./img/best-line9.png" alt="스테디셀러강의사진"></a></li>
+            <li><a href="javascript:void(0)"><img src="./img/best-line10.png" alt="스테디셀러강의사진"></a></li>
+            <li><a href="javascript:void(0)"><img src="./img/best-line11.png" alt="스테디셀러강의사진"></a></li>
+            <li><a href="javascript:void(0)"><img src="./img/best-line12.png" alt="스테디셀러강의사진"></a></li>
           </ul>
         </div>
       </div>
@@ -459,7 +540,7 @@
           <em>최근 한 달 55만 패캐머들이 가장 많이 찾은 Best of Best Seller 강의!</em>
         </div>
         <ul class="main-content">
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-1.png" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -473,7 +554,7 @@
                 <li>코딩테스트</li>
               </ul><!-- /.label-box -->
             </a></li>
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-2.jpg" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -488,7 +569,7 @@
                 <li>stack</li>
               </ul><!-- /.label-box -->
             </a></li>
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-3.png" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -505,7 +586,7 @@
                 <!-- <li>stack</li> -->
               </ul><!-- /.label-box -->
             </a></li>
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-4.jpg" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -520,7 +601,7 @@
                 <li>웹3.0</li>
               </ul><!-- /.label-box -->
             </a></li>
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-5.png" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -535,7 +616,7 @@
                 <!-- <li>stack</li> -->
               </ul><!-- /.label-box -->
             </a></li>
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-6.webp" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -551,7 +632,7 @@
                 <li>데이터분석</li>
               </ul><!-- /.label-box -->
             </a></li>
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-7.png" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -566,7 +647,7 @@
                 <li>김희재작가</li>
               </ul><!-- /.label-box -->
             </a></li>
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-8.png" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -584,7 +665,7 @@
                 <li>The Red</li>
               </ul><!-- /.label-box -->
             </a></li>
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-9.webp" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -598,7 +679,7 @@
                 <li>Kubernetes</li>
               </ul><!-- /.label-box -->
             </a></li>
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-10.png" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -613,7 +694,7 @@
                 <li>stack</li>
               </ul><!-- /.label-box -->
             </a></li>
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-11.png" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -628,7 +709,7 @@
                 <li>엑셀</li>
               </ul><!-- /.label-box -->
             </a></li>
-          <li><a href="#">
+          <li><a href="javascript:void(0)">
               <div class="img-box">
                 <img src="./img/low-pr-12.png" alt="시그니처 패키지">
               </div><!-- /.img-box -->
@@ -653,36 +734,864 @@
           <em>최근 한 달 55만 패캐머들이 가장 많이 찾은 Best of Best Seller 강의!</em>
         </div>
         <ul class="main-content">
-          <li><a href="#"><img src="./img/guide-1.png" alt="학습가이드이미지"></a></li>
-          <li><a href="#"><img src="./img/guide-2.png" alt="학습가이드이미지"></a></li>
-          <li><a href="#"><img src="./img/guide-3.png" alt="학습가이드이미지"></a></li>
-          <li><a href="#"><img src="./img/guide-4.png" alt="학습가이드이미지"></a></li>
-          <li><a href="#"><img src="./img/guide-5.png" alt="학습가이드이미지"></a></li>
-          <li><a href="#"><img src="./img/guide-6.png" alt="학습가이드이미지"></a></li>
-          <li><a href="#"><img src="./img/guide-7.png" alt="학습가이드이미지"></a></li>
-          <li><a href="#"><img src="./img/guide-8.png" alt="학습가이드이미지"></a></li>
-          <li><a href="#"><img src="./img/guide-9.png" alt="학습가이드이미지"></a></li>
-          <li><a href="#"><img src="./img/guide-10.png" alt="학습가이드이미지"></a></li>
-          <li><a href="#"><img src="./img/guide-11.png" alt="학습가이드이미지"></a></li>
-          <li><a href="#"><img src="./img/guide-12.png" alt="학습가이드이미지"></a></li>
+          <li><a href="javascript:void(0)"><img src="./img/guide-1.png" alt="학습가이드이미지"></a></li>
+          <li><a href="javascript:void(0)"><img src="./img/guide-2.png" alt="학습가이드이미지"></a></li>
+          <li><a href="javascript:void(0)"><img src="./img/guide-3.png" alt="학습가이드이미지"></a></li>
+          <li><a href="javascript:void(0)"><img src="./img/guide-4.png" alt="학습가이드이미지"></a></li>
+          <li><a href="javascript:void(0)"><img src="./img/guide-5.png" alt="학습가이드이미지"></a></li>
+          <li><a href="javascript:void(0)"><img src="./img/guide-6.png" alt="학습가이드이미지"></a></li>
+          <li><a href="javascript:void(0)"><img src="./img/guide-7.png" alt="학습가이드이미지"></a></li>
+          <li><a href="javascript:void(0)"><img src="./img/guide-8.png" alt="학습가이드이미지"></a></li>
+          <li><a href="javascript:void(0)"><img src="./img/guide-9.png" alt="학습가이드이미지"></a></li>
+          <li><a href="javascript:void(0)"><img src="./img/guide-10.png" alt="학습가이드이미지"></a></li>
+          <li><a href="javascript:void(0)"><img src="./img/guide-11.png" alt="학습가이드이미지"></a></li>
+          <li><a href="javascript:void(0)"><img src="./img/guide-12.png" alt="학습가이드이미지"></a></li>
         </ul>
       </div>
     </section>
+    <section class="event">
+      <div class="container">
+        <div class="title-box">
+          <h2>프로모션</h2>
+          <p>이번 주 진행중인<br>프로모션 & 이벤트 모음</p>
+          <em>특별한 혜택 받을 수 있는 기회를 바로 확인해보세요!</em>
+          <div class="more-box"><a href="javascript:void(0)">모든 프로모션/이벤트 보러가기&gt;</a></div>
+        </div><!-- /.title-box -->
+        <div class="swiper mySwiper1">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide"><a href="javascript:void(0)"><img src="./img/event-1.png" alt=""></a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)"><img src="./img/event-2.png" alt=""></a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)"><img src="./img/event-3.png" alt=""></a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)"><img src="./img/event-4.png" alt=""></a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)"><img src="./img/event-5.png" alt=""></a></li>
+          </ul>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div><!-- /.mySwiper1 -->
+      </div><!-- /.container -->
+    </section>
+    <section class="fast-article">
+      <div class="container">
+        <div class="title-box">
+          <h2>패스트캠퍼스 아티클</h2>
+          <p>내 일상과 삶에<br>변화를 가져올 인사이트</p>
+          <em>지금 가장 인기 있는 콘텐츠를 확인해보세요.</em>
+        </div><!-- /.title-box -->
+        <ul class="main-content">
+          <li><a href="javascript:void(0)">
+              <img src="./img/article-1.webp" alt="article image1">
+              <p>이럴 때는 딥러닝을 활용해야 합니다.<img src="img/angle-right.svg" alt="더보기 화살표"></p>
+            </a></li>
+          <li><a href="javascript:void(0)">
+              <img src="./img/article-2.png" alt="article image2">
+              <p>웹 내비게이션을 디자인할 때 꼭 지켜야 하는 원칙<img src="img/angle-right.svg" alt="더보기 화살표"></p>
+            </a></li>
+          <li><a href="javascript:void(0)">
+              <img src="./img/article-3.webp" alt="article image3">
+              <p>코딩테스트 보기 전에 꼭 읽고 가세요<img src="img/angle-right.svg" alt="더보기 화살표"></p>
+            </a></li>
+        </ul>
+        <a href="javascript:void(0)">더 보러가기</a>
+      </div><!-- /.container -->
+    </section><!-- /.fast-article -->
+    <section class="category-button">
+      <div class="container">
+        <div class="cate-box">
+          <h2><strong>카테고리</strong>에 따라 강의를 찾아보세요.</h2>
+          <ul class="category-content">
+            <li><a href="javascript:void(0)">
+                <img src="./img/pro-ico.svg" alt="프로그래밍 아이콘">
+                <p>프로그래밍</p>
+              </a></li>
+            <li><a href="javascript:void(0)">
+                <img src="./img/data-ico.svg" alt="데이터 사이언스 아이콘">
+                <p>데이터사이언스</p>
+              </a></li>
+            <li><a href="javascript:void(0)">
+                <img src="./img/dgn-ico.svg" alt="디자인 아이콘">
+                <p>디자인</p>
+              </a></li>
+            <li><a href="javascript:void(0)">
+                <img src="./img/vid-ico.svg" alt="영상 아이콘">
+                <p>영상/3D</p>
+              </a></li>
+            <li><a href="javascript:void(0)">
+                <img src="./img/fin-ico.svg" alt="부동산/금융 아이콘">
+                <p>부동산/금융</p>
+              </a></li>
+            <li><a href="javascript:void(0)">
+                <img src="./img/mkt-ico.svg" alt="마케팅 아이콘">
+                <p>마케팅/글쓰기</p>
+              </a></li>
+            <li><a href="javascript:void(0)">
+                <img src="./img/prod-ico.svg" alt="업무/생산성 아이콘">
+                <p>업무/생산성</p>
+              </a></li>
+            <li><a href="javascript:void(0)">
+                <img src="./img/tch-ico.svg" alt="제태크 아이콘">
+                <p>투자/제태크</p>
+              </a></li>
+            <li><a href="javascript:void(0)">
+                <img src="./img/biz-ico.svg" alt="창업 아이콘">
+                <p>부업/창업</p>
+              </a></li>
+            <li><a href="javascript:void(0)">
+                <img src="./img/sho-ico.svg" alt="숏북 아이콘">
+                <p>숏북</p>
+              </a></li>
+          </ul>
+        </div><!-- /.cate-box -->
+      </div>
+    </section>
+    <section class="cate1">
+      <div class="container">
+        <div class="title-box">
+          <h2>프로그래밍</h2>
+          <a href="javascript:void(0)">전체보기 &gt;</a>
+        </div><!-- /.title-box -->
+        <div class="swiper mySwiper2">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-6.webp" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>한 번에 끝내는 SQL과 데이터 시각화 초격차 패키지 Online.</h4>
+                  <p>SQL기반으로 Excel, Tableau까지!
+                    데이터 수집, 분석, 시각화 한 번에 학습 완료! </p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>SQL</li>
+                  <li>엑셀</li>
+                  <li>태블로</li>
+                  <li>데이터분석</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            </a>
+            </li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-9.webp" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>DevOps 마스터 Kit with Linux, Kubernetes, Docker</h4>
+                  <p>DevOps 엔지니어/SRE가 되기 위한 Linux 기초부터 Docker, Kubernetes의 활용과 이직을 위한 데브옵스 인터뷰 준비까지 한 번에!</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>DevOps</li>
+                  <li>Linux</li>
+                  <li>Kubernetes</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-10.png" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>사이드 프로젝트 : 10개 기술스택으로 구현하는 풀스택 서버리스 프로젝트 with React</h4>
+                  <p>카카오, 아마존 출신 개발자에게 프로젝트로 배우는 프론트엔드 실무!</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>React</li>
+                  <li>서버릭스</li>
+                  <li>프론트엔드</li>
+                  <li>stack</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-8.png" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>The RED : 현실 세상의 TDD 실전편 : 설계 확장성을 위한 코드 개선 방법</h4>
+                  <p>현실 세상의 TDD, 그 두 번째 이야기
+                    이제 실제 현실 세상에 TDD를 도입해 볼 시간입니다.
+                    거대한 커머스 플랫폼 서비스의 레거시 코드베이스에서 주문, 정산, 계정관리 3개의 시스템에 요구사항의 변경과 추가를 반영하는 과정에서 점진적으로 설계 품질을 개선하고 자동화된
+                    테스트
+                    케이스를 확보하여 진화하는 코드를 구현하기위한 내용입니다. 강의가 배움에서 그치지 않도록 도와주는 도구가 되었으면 합니다. by 이규원</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>TDD</li>
+                  <li>테스트주도개발</li>
+                  <li>더레드</li>
+                  <li>The Red</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide">
+              <a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-6.webp" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>한 번에 끝내는 SQL과 데이터 시각화 초격차 패키지 Online.</h4>
+                  <p>SQL기반으로 Excel, Tableau까지!
+                    데이터 수집, 분석, 시각화 한 번에 학습 완료! </p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>SQL</li>
+                  <li>엑셀</li>
+                  <li>태블로</li>
+                  <li>데이터분석</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            </a>
+            </li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-9.webp" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>DevOps 마스터 Kit with Linux, Kubernetes, Docker</h4>
+                  <p>DevOps 엔지니어/SRE가 되기 위한 Linux 기초부터 Docker, Kubernetes의 활용과 이직을 위한 데브옵스 인터뷰 준비까지 한 번에!</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>DevOps</li>
+                  <li>Linux</li>
+                  <li>Kubernetes</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-10.png" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>사이드 프로젝트 : 10개 기술스택으로 구현하는 풀스택 서버리스 프로젝트 with React</h4>
+                  <p>카카오, 아마존 출신 개발자에게 프로젝트로 배우는 프론트엔드 실무!</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>React</li>
+                  <li>서버릭스</li>
+                  <li>프론트엔드</li>
+                  <li>stack</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-8.png" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>The RED : 현실 세상의 TDD 실전편 : 설계 확장성을 위한 코드 개선 방법</h4>
+                  <p>현실 세상의 TDD, 그 두 번째 이야기
+                    이제 실제 현실 세상에 TDD를 도입해 볼 시간입니다.
+                    거대한 커머스 플랫폼 서비스의 레거시 코드베이스에서 주문, 정산, 계정관리 3개의 시스템에 요구사항의 변경과 추가를 반영하는 과정에서 점진적으로 설계 품질을 개선하고 자동화된
+                    테스트
+                    케이스를 확보하여 진화하는 코드를 구현하기위한 내용입니다. 강의가 배움에서 그치지 않도록 도와주는 도구가 되었으면 합니다. by 이규원</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>TDD</li>
+                  <li>테스트주도개발</li>
+                  <li>더레드</li>
+                  <li>The Red</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide">
+              <a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-6.webp" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>한 번에 끝내는 SQL과 데이터 시각화 초격차 패키지 Online.</h4>
+                  <p>SQL기반으로 Excel, Tableau까지!
+                    데이터 수집, 분석, 시각화 한 번에 학습 완료! </p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>SQL</li>
+                  <li>엑셀</li>
+                  <li>태블로</li>
+                  <li>데이터분석</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            </a>
+            </li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-9.webp" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>DevOps 마스터 Kit with Linux, Kubernetes, Docker</h4>
+                  <p>DevOps 엔지니어/SRE가 되기 위한 Linux 기초부터 Docker, Kubernetes의 활용과 이직을 위한 데브옵스 인터뷰 준비까지 한 번에!</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>DevOps</li>
+                  <li>Linux</li>
+                  <li>Kubernetes</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-10.png" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>사이드 프로젝트 : 10개 기술스택으로 구현하는 풀스택 서버리스 프로젝트 with React</h4>
+                  <p>카카오, 아마존 출신 개발자에게 프로젝트로 배우는 프론트엔드 실무!</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>React</li>
+                  <li>서버릭스</li>
+                  <li>프론트엔드</li>
+                  <li>stack</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-8.png" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>The RED : 현실 세상의 TDD 실전편 : 설계 확장성을 위한 코드 개선 방법</h4>
+                  <p>현실 세상의 TDD, 그 두 번째 이야기
+                    이제 실제 현실 세상에 TDD를 도입해 볼 시간입니다.
+                    거대한 커머스 플랫폼 서비스의 레거시 코드베이스에서 주문, 정산, 계정관리 3개의 시스템에 요구사항의 변경과 추가를 반영하는 과정에서 점진적으로 설계 품질을 개선하고 자동화된
+                    테스트
+                    케이스를 확보하여 진화하는 코드를 구현하기위한 내용입니다. 강의가 배움에서 그치지 않도록 도와주는 도구가 되었으면 합니다. by 이규원</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>TDD</li>
+                  <li>테스트주도개발</li>
+                  <li>더레드</li>
+                  <li>The Red</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+          </ul>
+        </div><!-- /.mySwiper2 -->
+        <div class="button-box">
+          <div class="swiper-button-prev1"><i class="fa-solid fa-angle-left"></i></div>
+          <div class="swiper-button-next1"><i class="fa-solid fa-angle-right"></i></div>
+        </div><!-- /.button-box -->
+      </div><!-- /.container -->
+    </section>
+    <section class="cate2">
+      <div class="container">
+        <div class="title-box">
+          <h2>데이터사이언스</h2>
+          <a href="javascript:void(0)">전체보기 &gt;</a>
+        </div><!-- /.title-box -->
+        <div class="swiper mySwiper3">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-7.png" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>한 번에 끝내는 SQL과 데이터 시각화 초격차 패키지 Online.</h4>
+                  <p>SQL기반으로 Excel, Tableau까지!
+                    데이터 수집, 분석, 시각화 한 번에 학습 완료! </p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>SQL</li>
+                  <li>엑셀</li>
+                  <li>태블로</li>
+                  <li>데이터분석</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            </a>
+            </li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-2.jpg" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>DevOps 마스터 Kit with Linux, Kubernetes, Docker</h4>
+                  <p>DevOps 엔지니어/SRE가 되기 위한 Linux 기초부터 Docker, Kubernetes의 활용과 이직을 위한 데브옵스 인터뷰 준비까지 한 번에!</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>DevOps</li>
+                  <li>Linux</li>
+                  <li>Kubernetes</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-12.png" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>사이드 프로젝트 : 10개 기술스택으로 구현하는 풀스택 서버리스 프로젝트 with React</h4>
+                  <p>카카오, 아마존 출신 개발자에게 프로젝트로 배우는 프론트엔드 실무!</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>React</li>
+                  <li>서버릭스</li>
+                  <li>프론트엔드</li>
+                  <li>stack</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-3.png" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>The RED : 현실 세상의 TDD 실전편 : 설계 확장성을 위한 코드 개선 방법</h4>
+                  <p>현실 세상의 TDD, 그 두 번째 이야기
+                    이제 실제 현실 세상에 TDD를 도입해 볼 시간입니다.
+                    거대한 커머스 플랫폼 서비스의 레거시 코드베이스에서 주문, 정산, 계정관리 3개의 시스템에 요구사항의 변경과 추가를 반영하는 과정에서 점진적으로 설계 품질을 개선하고 자동화된
+                    테스트
+                    케이스를 확보하여 진화하는 코드를 구현하기위한 내용입니다. 강의가 배움에서 그치지 않도록 도와주는 도구가 되었으면 합니다. by 이규원</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>TDD</li>
+                  <li>테스트주도개발</li>
+                  <li>더레드</li>
+                  <li>The Red</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide">
+              <a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-6.webp" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>한 번에 끝내는 SQL과 데이터 시각화 초격차 패키지 Online.</h4>
+                  <p>SQL기반으로 Excel, Tableau까지!
+                    데이터 수집, 분석, 시각화 한 번에 학습 완료! </p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>SQL</li>
+                  <li>엑셀</li>
+                  <li>태블로</li>
+                  <li>데이터분석</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            </a>
+            </li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-9.webp" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>DevOps 마스터 Kit with Linux, Kubernetes, Docker</h4>
+                  <p>DevOps 엔지니어/SRE가 되기 위한 Linux 기초부터 Docker, Kubernetes의 활용과 이직을 위한 데브옵스 인터뷰 준비까지 한 번에!</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>DevOps</li>
+                  <li>Linux</li>
+                  <li>Kubernetes</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-10.png" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>사이드 프로젝트 : 10개 기술스택으로 구현하는 풀스택 서버리스 프로젝트 with React</h4>
+                  <p>카카오, 아마존 출신 개발자에게 프로젝트로 배우는 프론트엔드 실무!</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>React</li>
+                  <li>서버릭스</li>
+                  <li>프론트엔드</li>
+                  <li>stack</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-8.png" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>The RED : 현실 세상의 TDD 실전편 : 설계 확장성을 위한 코드 개선 방법</h4>
+                  <p>현실 세상의 TDD, 그 두 번째 이야기
+                    이제 실제 현실 세상에 TDD를 도입해 볼 시간입니다.
+                    거대한 커머스 플랫폼 서비스의 레거시 코드베이스에서 주문, 정산, 계정관리 3개의 시스템에 요구사항의 변경과 추가를 반영하는 과정에서 점진적으로 설계 품질을 개선하고 자동화된
+                    테스트
+                    케이스를 확보하여 진화하는 코드를 구현하기위한 내용입니다. 강의가 배움에서 그치지 않도록 도와주는 도구가 되었으면 합니다. by 이규원</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>TDD</li>
+                  <li>테스트주도개발</li>
+                  <li>더레드</li>
+                  <li>The Red</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide">
+              <a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-6.webp" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>한 번에 끝내는 SQL과 데이터 시각화 초격차 패키지 Online.</h4>
+                  <p>SQL기반으로 Excel, Tableau까지!
+                    데이터 수집, 분석, 시각화 한 번에 학습 완료! </p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>SQL</li>
+                  <li>엑셀</li>
+                  <li>태블로</li>
+                  <li>데이터분석</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            </a>
+            </li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-9.webp" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>DevOps 마스터 Kit with Linux, Kubernetes, Docker</h4>
+                  <p>DevOps 엔지니어/SRE가 되기 위한 Linux 기초부터 Docker, Kubernetes의 활용과 이직을 위한 데브옵스 인터뷰 준비까지 한 번에!</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>DevOps</li>
+                  <li>Linux</li>
+                  <li>Kubernetes</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-10.png" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>사이드 프로젝트 : 10개 기술스택으로 구현하는 풀스택 서버리스 프로젝트 with React</h4>
+                  <p>카카오, 아마존 출신 개발자에게 프로젝트로 배우는 프론트엔드 실무!</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>React</li>
+                  <li>서버릭스</li>
+                  <li>프론트엔드</li>
+                  <li>stack</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-8.png" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>The RED : 현실 세상의 TDD 실전편 : 설계 확장성을 위한 코드 개선 방법</h4>
+                  <p>현실 세상의 TDD, 그 두 번째 이야기
+                    이제 실제 현실 세상에 TDD를 도입해 볼 시간입니다.
+                    거대한 커머스 플랫폼 서비스의 레거시 코드베이스에서 주문, 정산, 계정관리 3개의 시스템에 요구사항의 변경과 추가를 반영하는 과정에서 점진적으로 설계 품질을 개선하고 자동화된
+                    테스트
+                    케이스를 확보하여 진화하는 코드를 구현하기위한 내용입니다. 강의가 배움에서 그치지 않도록 도와주는 도구가 되었으면 합니다. by 이규원</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>TDD</li>
+                  <li>테스트주도개발</li>
+                  <li>더레드</li>
+                  <li>The Red</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+          </ul>
+        </div><!-- /.mySwiper2 -->
+        <div class="button-box">
+          <div class="swiper-button-prev2"><i class="fa-solid fa-angle-left"></i></div>
+          <div class="swiper-button-next2"><i class="fa-solid fa-angle-right"></i></div>
+        </div><!-- /.button-box -->
+      </div><!-- /.container -->
+    </section>
+    <section class="cate3">
+      <div class="container">
+        <div class="title-box">
+          <h2>디자인</h2>
+          <a href="javascript:void(0)">전체보기 &gt;</a>
+        </div><!-- /.title-box -->
+        <div class="swiper mySwiper4">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-5.png" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>한 번에 끝내는 SQL과 데이터 시각화 초격차 패키지 Online.</h4>
+                  <p>SQL기반으로 Excel, Tableau까지!
+                    데이터 수집, 분석, 시각화 한 번에 학습 완료! </p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>SQL</li>
+                  <li>엑셀</li>
+                  <li>태블로</li>
+                  <li>데이터분석</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            </a>
+            </li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-1.png" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>DevOps 마스터 Kit with Linux, Kubernetes, Docker</h4>
+                  <p>DevOps 엔지니어/SRE가 되기 위한 Linux 기초부터 Docker, Kubernetes의 활용과 이직을 위한 데브옵스 인터뷰 준비까지 한 번에!</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>DevOps</li>
+                  <li>Linux</li>
+                  <li>Kubernetes</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-10.png" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>사이드 프로젝트 : 10개 기술스택으로 구현하는 풀스택 서버리스 프로젝트 with React</h4>
+                  <p>카카오, 아마존 출신 개발자에게 프로젝트로 배우는 프론트엔드 실무!</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>React</li>
+                  <li>서버릭스</li>
+                  <li>프론트엔드</li>
+                  <li>stack</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-9.webp" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>The RED : 현실 세상의 TDD 실전편 : 설계 확장성을 위한 코드 개선 방법</h4>
+                  <p>현실 세상의 TDD, 그 두 번째 이야기
+                    이제 실제 현실 세상에 TDD를 도입해 볼 시간입니다.
+                    거대한 커머스 플랫폼 서비스의 레거시 코드베이스에서 주문, 정산, 계정관리 3개의 시스템에 요구사항의 변경과 추가를 반영하는 과정에서 점진적으로 설계 품질을 개선하고 자동화된
+                    테스트
+                    케이스를 확보하여 진화하는 코드를 구현하기위한 내용입니다. 강의가 배움에서 그치지 않도록 도와주는 도구가 되었으면 합니다. by 이규원</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>TDD</li>
+                  <li>테스트주도개발</li>
+                  <li>더레드</li>
+                  <li>The Red</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide">
+              <a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-6.webp" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>한 번에 끝내는 SQL과 데이터 시각화 초격차 패키지 Online.</h4>
+                  <p>SQL기반으로 Excel, Tableau까지!
+                    데이터 수집, 분석, 시각화 한 번에 학습 완료! </p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>SQL</li>
+                  <li>엑셀</li>
+                  <li>태블로</li>
+                  <li>데이터분석</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            </a>
+            </li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-9.webp" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>DevOps 마스터 Kit with Linux, Kubernetes, Docker</h4>
+                  <p>DevOps 엔지니어/SRE가 되기 위한 Linux 기초부터 Docker, Kubernetes의 활용과 이직을 위한 데브옵스 인터뷰 준비까지 한 번에!</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>DevOps</li>
+                  <li>Linux</li>
+                  <li>Kubernetes</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-10.png" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>사이드 프로젝트 : 10개 기술스택으로 구현하는 풀스택 서버리스 프로젝트 with React</h4>
+                  <p>카카오, 아마존 출신 개발자에게 프로젝트로 배우는 프론트엔드 실무!</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>React</li>
+                  <li>서버릭스</li>
+                  <li>프론트엔드</li>
+                  <li>stack</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-8.png" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>The RED : 현실 세상의 TDD 실전편 : 설계 확장성을 위한 코드 개선 방법</h4>
+                  <p>현실 세상의 TDD, 그 두 번째 이야기
+                    이제 실제 현실 세상에 TDD를 도입해 볼 시간입니다.
+                    거대한 커머스 플랫폼 서비스의 레거시 코드베이스에서 주문, 정산, 계정관리 3개의 시스템에 요구사항의 변경과 추가를 반영하는 과정에서 점진적으로 설계 품질을 개선하고 자동화된
+                    테스트
+                    케이스를 확보하여 진화하는 코드를 구현하기위한 내용입니다. 강의가 배움에서 그치지 않도록 도와주는 도구가 되었으면 합니다. by 이규원</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>TDD</li>
+                  <li>테스트주도개발</li>
+                  <li>더레드</li>
+                  <li>The Red</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide">
+              <a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-6.webp" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>한 번에 끝내는 SQL과 데이터 시각화 초격차 패키지 Online.</h4>
+                  <p>SQL기반으로 Excel, Tableau까지!
+                    데이터 수집, 분석, 시각화 한 번에 학습 완료! </p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>SQL</li>
+                  <li>엑셀</li>
+                  <li>태블로</li>
+                  <li>데이터분석</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            </a>
+            </li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-9.webp" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>DevOps 마스터 Kit with Linux, Kubernetes, Docker</h4>
+                  <p>DevOps 엔지니어/SRE가 되기 위한 Linux 기초부터 Docker, Kubernetes의 활용과 이직을 위한 데브옵스 인터뷰 준비까지 한 번에!</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>DevOps</li>
+                  <li>Linux</li>
+                  <li>Kubernetes</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-10.png" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>사이드 프로젝트 : 10개 기술스택으로 구현하는 풀스택 서버리스 프로젝트 with React</h4>
+                  <p>카카오, 아마존 출신 개발자에게 프로젝트로 배우는 프론트엔드 실무!</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>React</li>
+                  <li>서버릭스</li>
+                  <li>프론트엔드</li>
+                  <li>stack</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">
+                <div class="img-box">
+                  <img src="./img/low-pr-8.png" alt="시그니처 패키지">
+                </div><!-- /.img-box -->
+                <div class="text-box">
+                  <h4>The RED : 현실 세상의 TDD 실전편 : 설계 확장성을 위한 코드 개선 방법</h4>
+                  <p>현실 세상의 TDD, 그 두 번째 이야기
+                    이제 실제 현실 세상에 TDD를 도입해 볼 시간입니다.
+                    거대한 커머스 플랫폼 서비스의 레거시 코드베이스에서 주문, 정산, 계정관리 3개의 시스템에 요구사항의 변경과 추가를 반영하는 과정에서 점진적으로 설계 품질을 개선하고 자동화된
+                    테스트
+                    케이스를 확보하여 진화하는 코드를 구현하기위한 내용입니다. 강의가 배움에서 그치지 않도록 도와주는 도구가 되었으면 합니다. by 이규원</p>
+                </div><!-- /.text-box -->
+                <ul class="label-box">
+                  <li>TDD</li>
+                  <li>테스트주도개발</li>
+                  <li>더레드</li>
+                  <li>The Red</li>
+                </ul><!-- /.label-box -->
+              </a></li>
+          </ul>
+        </div><!-- /.mySwiper2 -->
+        <div class="button-box">
+          <div class="swiper-button-prev3"><i class="fa-solid fa-angle-left"></i></div>
+          <div class="swiper-button-next3"><i class="fa-solid fa-angle-right"></i></div>
+        </div><!-- /.button-box -->
+      </div><!-- /.container -->
+    </section>
   </main>
   <footer>
-
+    
+    <div class="ft-notice">
+      <div class="container">
+        <h3>공지사항</h3>
+        <ul class="notice">
+          <li><a href="javascript:void(0)">
+            <p>[공지] 강의 만족도 조사 시행문</p>
+            <span>2022. 10. 12<small>&gt;</small></span>
+          </a></li>
+          <li><a href="javascript:void(0)">
+            <p>[공지] 채팅 상담 서비스 종료 안내</p>
+            <span>2022. 10. 12<small>&gt;</small></span>
+          </a></li>
+          <li><a href="javascript:void(0)">
+            <p>[공지] 패스트캠퍼스 고객센터 페이지가 오픈되었습니다.</p>
+            <span>2022. 10. 12<small>&gt;</small></span>
+          </a></li>
+        </ul>
+      </div><!-- /.container -->
+    </div><!-- /.ft-notice -->
+    <div class="ft-content">
+      <div class="container">
+        <ul class="content">
+          <li><a href="javascript:void(0)">회사소개</a></li>
+          <li>|</li>
+          <li><a href="javascript:void(0)">강사지원</a></li>
+          <li>|</li>
+          <li><a href="javascript:void(0)">채용안내</a></li>
+          <li>|</li>
+          <li><a href="javascript:void(0)">인재추천</a></li>
+        </ul>
+      </div><!-- /.container -->
+    </div><!-- /.ft-content -->
+    <div class="ft-info">
+      <div class="container">
+        <div class="ft-logo">
+          <div class="logo-box">
+            <h1>FAST CAMPUS</h1>
+            <span>(주) 데이원컴퍼니 </span>
+          </div><!-- /.logo-box -->
+          <div class="pr-img-box">
+            <img src="./img/pr1.png" alt="올해의 브랜드 대상 2021">
+            <img src="./img/pr2.png" alt="올해를 빛낸 브랜드 대상 2021">
+          </div>
+        </div><!-- /.ft-log -->
+        <div class="ft-list-top">
+          <ul>
+            <li>대표이사: 이경민</li>
+            <li>|</li>
+            <li>개인정보책임관리자: 이강민</li>
+            <li>|</li>
+            <li>사업자번호 : 810-86-00658</li>
+          </ul>
+          <ul>
+            <li>사무실 : 서울특별시 강남구 테헤란로 231, 센터필드 WEST 6층, 7층</li>
+            <li>|</li>
+            <li>교육장 : 서울특별시 강남구 강남대로 364 미왕빌딩 10, 11층</li>
+          </ul>
+        </div><!-- /.ft-list -->
+        <p class="ft-line"></p>
+        <ul class="ft-nav">
+          <li><a href="javascript:void(0)">이용약관</a></li>
+          <li>|</li>
+          <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+          <li>|</li>
+          <li><a href="javascript:void(0)">FAQ</a></li>
+          <li>|</li>
+          <li><a href="javascript:void(0)">취소/환불 정책</a></li>
+          <li>|</li>
+          <li><a href="javascript:void(0)">자료실</a></li>
+          <li>|</li>
+          <li><a href="javascript:void(0)">공지사항</a></li>
+          <li>|</li>
+          <li><a href="javascript:void(0)">장학프로그램</a></li>
+        </ul>
+        <div class="ft-list-bt">
+          <ul>
+            <li>고객지원 <strong>02-501-9396</strong></li>
+            <li>|</li>
+            <li>결제/환불/계산서 문의 : <a href="javascript:void(0)">help@fastcampus.co.kr</a></li>
+            <li>|</li>
+            <li>기타 문의<a href="javascript:void(0)"> help.online@fastcampus.co.kr</a></li>
+            <li>|</li>
+            <li>주중 10시~19시 (점심시간 12~13시 / 주말 및 공휴일 제외)</li>
+          </ul>
+          <ul>
+            <li>통신판매업 신고번호 : 제 2017-서울강남-01977호</li>
+            <li>|</li>
+            <li>학원설립 운영등록번호: 제12484호(강남)</li>
+            <li>|</li>
+            <li>원격평생교육원 : <a href="javascript:void(0)">제 572호</a></li>
+          </ul>
+        </div>
+      </div><!-- /.container -->
+    </div><!-- /.ft-info -->
   </footer>
 </body>
 
 </html>
-
-<div class="pagination-container">
-  <div class="swiper-page-controler">
-    <div class="swiper-prev">
-      <i class="hi fa-solid fa-angle-left"></i>
-    </div>
-    <div class="swiper-next">
-      <i class="hi fa-solid fa-angle-right"></i>
-    </div>
-  </div>
-</div>
