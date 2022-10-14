@@ -62,7 +62,7 @@ const historyHoverBg = document.querySelectorAll('header .search-box .input-focu
 
 for(let i = 0; i < historyHover.length; i++){
   historyHover[i].addEventListener("mouseover",()=>{
-    historyHoverBg[i].style.backgroundColor = '#';
+    historyHoverBg[i].style.backgroundColor = '#f8f8f8';
   });
   historyHover[i].addEventListener("mouseout",()=>{
     historyHoverBg[i].style.backgroundColor = '#fff';
