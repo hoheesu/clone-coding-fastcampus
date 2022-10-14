@@ -184,7 +184,7 @@ var historyHoverBg = document.querySelectorAll('header .search-box .input-focus 
 
 var _loop = function _loop(i) {
   historyHover[i].addEventListener("mouseover", function () {
-    historyHoverBg[i].style.backgroundColor = '#';
+    historyHoverBg[i].style.backgroundColor = '#f8f8f8';
   });
   historyHover[i].addEventListener("mouseout", function () {
     historyHoverBg[i].style.backgroundColor = '#fff';
@@ -296,7 +296,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63651" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55834" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
